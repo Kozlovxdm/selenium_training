@@ -21,7 +21,7 @@ public class AdminLoginFirefoxESR {
         FirefoxOptions options = new FirefoxOptions()
                 .setLegacy(true) //использовать старую схему запуска (без geckodriver)
                 .setBinary("/opt/firefoxESR/firefox")
-                .setProfile(new FirefoxProfile(new File("/home/user01/.mozilla/firefox/fyq6zl7i.ESR"))); //использовать профиль для ESR
+                .setProfile(new FirefoxProfile());
         driver = new FirefoxDriver(options);
         System.out.println(((HasCapabilities) driver).getCapabilities()); //вывести настройки веб-драйвера
 

@@ -19,7 +19,7 @@ public class AdminLoginNightly {
     public void setUp() {
         FirefoxOptions options = new FirefoxOptions()
                 .setBinary("/opt/firefoxNightly/firefox")
-                .setProfile(new FirefoxProfile(new File("/home/user01/.mozilla/firefox/u5jwunq4.Nightly"))); //использовать профиль для Nightly
+                .setProfile(new FirefoxProfile());
         driver = new FirefoxDriver(options);
         System.out.println(((HasCapabilities) driver).getCapabilities()); //вывести настройки веб-драйвера
 
